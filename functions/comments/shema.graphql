@@ -1,0 +1,9 @@
+type Comment {
+  name: String!
+  content: String!
+  slug:String!
+}
+type Query {
+  allComments: [Comment!]
+  commentsBySlug(slug:String!) : [Comment!]
+}
